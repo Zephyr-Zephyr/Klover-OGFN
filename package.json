@@ -1,0 +1,33 @@
+{
+  "name": "lunaris-bot",
+  "version": "1.0.0",
+  "description": "Ein Discord Bot mit Ticket-, Welcome- und Giveaway-System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "ticket",
+    "giveaway",
+    "welcome"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "mongoose": "^8.0.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
