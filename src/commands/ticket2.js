@@ -2,8 +2,8 @@ const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, Butt
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('ticket2')
-    .setDescription('Create an improved ticket system panel')
+    .setName('ticket')
+    .setDescription('Erstelle ein Ticket per Klick')
     .addChannelOption(option => option.setName('channel').setDescription('Channel for the ticket panel').setRequired(true)),
 
   async execute(interaction) {
@@ -19,6 +19,6 @@ module.exports = {
     );
 
     await channel.send({ embeds: [embed], components: [row] });
-    await interaction.reply({ content: `✅ Ticket panel created in ${channel}.`, ephemeral: true });
+    await interaction.reply({ content: `✅ Ticket-Panel wurde in ${channel} erstellt.`, ephemeral: true });
   },
 };
